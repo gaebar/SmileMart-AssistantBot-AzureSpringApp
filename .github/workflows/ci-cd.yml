@@ -27,5 +27,6 @@ jobs:
 
     # Maven deploy, make sure you have correct configurations in your pom.xml
     - name: deploy to Azure Spring Apps using Maven
+      working-directory: ./complete
       run: |
         mvn azure-spring-apps:deploy
