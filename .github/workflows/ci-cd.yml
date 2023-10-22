@@ -15,6 +15,7 @@ jobs:
         java-version: '17'
 
     - name: maven build, clean
+      working-directory: ./complete
       run: |
         mvn clean package
 
