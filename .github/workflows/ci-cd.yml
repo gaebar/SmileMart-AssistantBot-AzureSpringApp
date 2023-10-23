@@ -8,6 +8,8 @@ jobs:
     env:
       CHATBOT_API_KEY: ${{ secrets.CHATBOT_API_KEY }}
 
+    environment: GitHubEnvironment
+
     steps:
 
       - uses: actions/checkout@main
