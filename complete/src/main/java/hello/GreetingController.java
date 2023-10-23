@@ -30,7 +30,7 @@ public class GreetingController {
 
     @RequestMapping("/")
     public @ResponseBody String greeting() {
-        return "Hello World 1";
+        return "Hello World";
     }
 
 
@@ -38,7 +38,7 @@ public class GreetingController {
     public ObjectNode sayHello() throws IOException {
         HttpURLConnection con = (HttpURLConnection) new URL("https://webchat.botframework.com/api/tokens").openConnection();
         con.setRequestMethod("GET");
-        con.setRequestProperty("Authorization","BotConnector "+ apikey);
+        con.setRequestProperty("Authorization", "BotConnector " + apikey);
 
         BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
         String output;
