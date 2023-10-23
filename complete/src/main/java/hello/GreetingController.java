@@ -24,7 +24,7 @@ import java.util.Map;
 @RestController
 public class GreetingController {
 
-    @Value("${chatbot.apikey}")
+    //  @Value("${chatbot.apikey}")
     private String apikey;
 
 
