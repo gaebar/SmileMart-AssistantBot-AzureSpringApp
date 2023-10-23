@@ -2,6 +2,8 @@
 
 Status: Work in Progress
 
+A temporary token provider for Azure chatbot App
+
 
 
 :toc:
