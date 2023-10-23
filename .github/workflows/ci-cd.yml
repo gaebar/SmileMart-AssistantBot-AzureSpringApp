@@ -4,29 +4,33 @@ on: push
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+
+    env:
+      CHATBOT_API_KEY: ${{ secrets.CHATBOT_API_KEY }}
+
     steps:
 
-    - uses: actions/checkout@main
+      - uses: actions/checkout@main
 
-    - name: Set up Java 17
-      uses: actions/setup-java@v3
-      with:
-        distribution: 'microsoft'
-        java-version: '17'
+      - name: Set up Java 17
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'microsoft'
+          java-version: '17'
 
-    - name: maven build, clean
-      working-directory: ./complete
-      run: |
-        mvn clean package
+      - name: maven build, clean
+        working-directory: ./complete
+        run: |
+          mvn clean package -Dspring.profiles.active=github
 
-    # Maven plugin can consume this authentication method automatically
-    - name: Azure Login
-      uses: azure/login@v1
-      with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
+      # Maven plugin can consume this authentication method automatically
+      - name: Azure Login
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-    # Maven deploy, make sure you have correct configurations in your pom.xml
-    - name: deploy to Azure Spring Apps using Maven
-      working-directory: ./complete
-      run: |
-        mvn azure-spring-apps:deploy
+      # Maven deploy, make sure you have correct configurations in your pom.xml
+      - name: deploy to Azure Spring Apps using Maven
+        working-directory: ./complete
+        run: |
+          mvn azure-spring-apps:deploy

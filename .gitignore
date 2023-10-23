@@ -33,3 +33,6 @@ README.html
 
 # AZD files
 .azure
+
+# Local configuration files
+complete/src/main/resources/application-local.properties
