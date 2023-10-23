@@ -21,7 +21,7 @@ jobs:
       - name: maven build, clean
         working-directory: ./complete
         run: |
-          mvn clean package -Dspring.profiles.active=github
+          mvn clean package
 
       # Maven plugin can consume this authentication method automatically
       - name: Azure Login

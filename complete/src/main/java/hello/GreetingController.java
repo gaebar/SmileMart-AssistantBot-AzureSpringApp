@@ -2,6 +2,7 @@ package hello;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.BufferedReader;
@@ -14,8 +15,9 @@ import java.net.URL;
 @RestController
 public class GreetingController {
 
-    //  @Value("${chatbot.apikey}")
+    @Value("${chatbot.apikey}")
     private String apikey;
+
 
     @RequestMapping("/")
     public @ResponseBody String greeting() {
