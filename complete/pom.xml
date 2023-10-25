@@ -60,6 +60,7 @@
                     <appName>demo</appName>
                     <isPublic>true</isPublic>
                     <deployment>
+                        <runtimeVersion>Java_17</runtimeVersion>
                         <resources>
                             <resource>
                                 <directory>${project.basedir}/target</directory>
