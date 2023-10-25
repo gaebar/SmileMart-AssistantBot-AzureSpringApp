@@ -29,7 +29,7 @@ public class GreetingController {
     }
 
     @GetMapping("/get-chatbot-token")
-    @CrossOrigin(origins = {"http://localhost:8080", "https://gaebar.github.io"})
+    @CrossOrigin(origins = {"http://localhost:8080", "http://localhost:8000", "https://gaebar.github.io"})
     public ObjectNode sayHello() throws IOException {
         HttpURLConnection con = (HttpURLConnection) new URL("https://webchat.botframework.com/api/tokens").openConnection();
         con.setRequestMethod("GET");
