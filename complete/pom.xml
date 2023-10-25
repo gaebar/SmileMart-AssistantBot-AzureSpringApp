@@ -54,9 +54,9 @@
                 <version>1.19.0</version>
                 <configuration>
                     <subscriptionId>c4421ee9-5cb8-4824-8607-64187d902edc</subscriptionId>
-                    <resourceGroup>rg-SmileMart-AssistantBot-AzureSpringApp</resourceGroup>
-                    <clusterName>asa-yt7xyaocl7xlo</clusterName>
-                    <sku>Standard</sku>
+                    <resourceGroup>rg-spring-app-environment-consumption</resourceGroup>
+                    <clusterName>asa-7a3n2m7rg4lui</clusterName>
+                    <sku>S0</sku>
                     <appName>demo</appName>
                     <isPublic>true</isPublic>
                     <deployment>
