@@ -1,10 +1,8 @@
-# WIP: Smile Mart Assistant Boy with Azure Spring App
+# WIP: TechBridge Capstone Project: Smile Mart Assistant Chatbot with Azure Spring App
 
 Status: Work in Progress
 
 This repository is developing a temporary token provider for the Azure-powered chatbot application, designed to facilitate secure and efficient customer service operations for Smile Mart.
-
-# TechBridge Capstone Project: Smile Mart Assistant Chatbot with Azure Spring App
 
 ## Table of Contents
 - [Executive Summary](#executive-summary)
