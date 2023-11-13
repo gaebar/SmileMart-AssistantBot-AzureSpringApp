@@ -1,10 +1,4 @@
-# WIP: Smile Mart Assistant Boy with Azure Spring App
-
-Status: Work in Progress
-
 A temporary token provider for Azure chatbot App
-
-
 
 :toc:
 :icons: font
