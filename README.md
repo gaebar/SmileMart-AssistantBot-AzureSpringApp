@@ -84,6 +84,10 @@ utilized in our project.
 Explore these additional resources to understand the technical details and broader context of our
 project:
 
+- [Explore Smile Mart's Official Website](https://gaebar.github.io/SmileMart-Store-Landing-Page/src/)
+- [Capstone Presentation Slides](https://docs.google.com/presentation/d/1eW7YJNQbCQb7Fc7HsP4Mzt9CcL6W3KYhGyr7uj0Tf6o/edit#slide=id.g297f2fe054d_0_31)
+- [Smile Mart Assistant Chatbot: A Comprehensive TechBridge Capstone Guide](https://docs.google.com/document/d/1Zer5HqsXGsC6Ndwt6GPSG1jXx3tcFMcpLHAj9-KNTG0/edit?usp=sharing)
+- [Advancing Smile Mart with Chatbot Technology: A Sales Proposal](https://docs.google.com/document/d/1E9JNDBn6E5Rx3ibJqEAh2dg1lhhSmmSAFYrDE9_ytpE/edit?usp=sharing)
 - [Azure Cognitive Services Documentation](https://docs.microsoft.com/azure/cognitive-services/)
 - [Azure Spring Apps Documentation](https://docs.microsoft.com/azure/spring-apps/)
 
