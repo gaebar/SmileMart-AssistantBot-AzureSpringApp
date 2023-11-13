@@ -1,10 +1,8 @@
-package hello;
+package gettoken;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.SpringApplication;
-import org.springframework.core.env.Environment;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.BufferedReader;
@@ -15,25 +13,22 @@ import java.net.URL;
 
 
 @RestController
-public class GreetingController {
+public class GetTokenController {
 
     @Value("${chatbot.apikey}")
-    private String apikey1;
-
-    @Value("#{environment.CHATBOT_API_KEY}")
-    private String apikey2;
+    private String chatBotApiKey;
 
     @RequestMapping("/")
     public @ResponseBody String greeting() {
         return "Hello World";
     }
 
-    @GetMapping("/get-chatbot-token")
+    @PostMapping("/get-chatbot-token")
     @CrossOrigin(origins = {"http://localhost:8080", "http://localhost:8000", "https://gaebar.github.io"})
-    public ObjectNode sayHello() throws IOException {
+    public ObjectNode getChatBotToken() throws IOException {
         HttpURLConnection con = (HttpURLConnection) new URL("https://webchat.botframework.com/api/tokens").openConnection();
         con.setRequestMethod("GET");
-        con.setRequestProperty("Authorization", "BotConnector " + apikey1);
+        con.setRequestProperty("Authorization", "BotConnector " + chatBotApiKey);
 
         BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
         String output;
