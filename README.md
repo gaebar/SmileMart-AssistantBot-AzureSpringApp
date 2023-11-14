@@ -37,7 +37,7 @@ in the GitHub repository.
 
 ### Addressing the Security Challenge
 
-Due to the limitations of the Azure Basic pricing tier, particularly the lack of access to the
+Due to the limitations of the Azure Consumption pricing tier, particularly the lack of access to the
 properties file feature (exclusive to the Enterprise tier), an alternative solution was necessary.
 This feature, typically used for the secure storage of environment variables including keys, was not
 available in our chosen tier.
